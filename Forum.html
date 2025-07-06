@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charity Pulse - Modern Charity Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            scroll-behavior: smooth;
+        }
+        .fade-in {
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        .scale-hover {
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+        }
+        .scale-hover:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        .bg{
+            background-color: rgb(255, 185, 185);
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-900">
+    <header class="backdrop-blur-md bg-white/10 fixed top-0 left-0 w-full z-50 border-b border-white/20">
+        <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between fade-in">
+            <h1 class="text-2xl font-extrabold tracking-wider text-white" style = "color: red;">LE'S CHARITY CLUB</h1>
+            <nav class="hidden md:flex space-x-6">
+  <a href="#" class="relative text-gray-800 font-semibold px-4 py-2 rounded-lg hover:text-red-600 transition before:absolute before:bottom-1 before:left-1/2 before:-translate-x-1/2 before:w-0 before:h-[2px] before:bg-red-400 before:transition-all hover:before:w-16">
+    TRANG CHỦ
+  </a>
+  <a href="#events" class="relative text-gray-800 font-semibold px-4 py-2 rounded-lg hover:text-red-600 transition before:absolute before:bottom-1 before:left-1/2 before:-translate-x-1/2 before:w-0 before:h-[2px] before:bg-red-400 before:transition-all hover:before:w-16">
+    SỰ KIỆN
+  </a>
+  <a href="#" class="relative text-gray-800 font-semibold px-4 py-2 rounded-lg hover:text-red-600 transition before:absolute before:bottom-1 before:left-1/2 before:-translate-x-1/2 before:w-0 before:h-[2px] before:bg-red-400 before:transition-all hover:before:w-16">
+    VỀ CHÚNG TÔI
+  </a>
+  <a href="#" class="relative text-gray-800 font-semibold px-4 py-2 rounded-lg hover:text-red-600 transition before:absolute before:bottom-1 before:left-1/2 before:-translate-x-1/2 before:w-0 before:h-[2px] before:bg-red-400 before:transition-all hover:before:w-16">
+    ĐÓNG GÓP
+  </a>
+</nav>
+            <button class="md:hidden flex items-center text-white">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+
+    <section class="relative text-white h-[100vh] flex items-center justify-center text-center fade-in mt-20 rounded-3xl shadow-2xl overflow-hidden" style="background-image: url('https://i.pinimg.com/1200x/14/8f/84/148f847b6227ab5ddfd2b18f66b14e35.jpg'); background-size: cover; background-position: center;">
+        <div class="relative z-10 backdrop-blur-md bg-white/10 rounded-xl p-8">
+            <h2 class="text-5xl md:text-6xl font-extrabold mb-6">LCC - CLB TÌNH NGUYỆN CHUYÊN LÊ QUÝ ĐÔN</h2>
+            <p class="max-w-2xl mx-auto text-xl">Tham gia cùng chúng mình để lan tỏa những việc làm ý nghĩa</p>
+            <div class="mt-10">
+                <a href="#features" class="bg-gradient-to-r from-red-500 to-pink-500 text-white font-bold px-8 py-4 rounded-full shadow-lg hover:shadow-2xl hover:scale-105 transition duration-300">Hành trình ý nghĩa của CLB</a>
+            </div>
+        </div>
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+    </section>
+<section id="features" class="py-20 px-6 max-w-7xl mx-auto fade-in" x-data="{
+    slides: [
+        { img: 'https://scontent.fsgn2-9.fna.fbcdn.net/v/t39.30808-6/495539741_1112865827551780_5687960789115178551_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHw_4FwcbfcfZpsPp1HieX5bmU5D_mC0ZxuZTkP-YLRnCiOfe7gQqZAI5ETGHZndT4QvoFhkOw972infWeosq9c&_nc_ohc=y-5nlUoA9jEQ7kNvwEsAhAu&_nc_oc=AdngoqVrVPJAxY2lPnr5rsSfLbPv7V5yHqjobCdZHCTn-AS4JBA90X6oo_3nkoh-Uk_NIxTqkLg91AEQEgkzncaZ&_nc_zt=23&_nc_ht=scontent.fsgn2-9.fna&_nc_gid=_PQdmVyTznlrWNcBsQD2_A&oh=00_AfRoBtdIX-J3PSSRqOgiZMoO5j8jRJui8xrifOvecmoQCg&oe=68704F58', title: 'GIAN HÀNG GÂY QUỸ SỐ 3- PHIÊN CHỢ CỘNG ĐỒNG LẦN 08 ❣️', desc: 'PHIÊN CHỢ CỘNG ĐỒNG LẦN 08” với chủ đề Think Global – Act Local – có nghĩa là suy nghĩ lớn nhưng hành động nhỏ...', link: 'https://www.facebook.com/share/p/1CkYM9W1mM/' },
+        { img: 'https://scontent.fsgn2-8.fna.fbcdn.net/v/t39.30808-6/494205131_1106801268158236_2864429158991384359_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHLedACZyEsSkdGVft48uUYClFamirXpqkKUVqaKtemqWaq5x16iHf_G2TPIdFSposRgXvPURZseXnP0ribo5E5&_nc_ohc=y4KYeh-OwkkQ7kNvwFofH4s&_nc_oc=AdnrVKEemrk-3aAlXE1_oav58i8OMiiBhspk_KyCbXrfAU1ciUf0V2OczxZWVstK5uHbLTC4UPu63Aivp8qJwCkS&_nc_zt=23&_nc_ht=scontent.fsgn2-8.fna&_nc_gid=8rPurjoPULCCd5ASAZZ4zw&oh=00_AfRQTFJ2IR5Gsd22wjM3DFZIikFwrJ51xgCKC1dzJUxT8w&oe=68705F7B', title: 'MỪNG KỶ NIỆM 50 NĂM GIẢI PHÓNG MIỀN NAM, THỐNG NHẤT ĐẤT NƯỚC', desc: ' CLB Tình nguyện Chuyên Lê Quý Đôn đã đến thăm hỏi và trao tặng quà cho 3 hộ gia đình thương binh liệt sĩ có hoàn cảnh khó khăn tại phường Nhơn Bình...' , link: 'https://www.facebook.com/share/p/1ZXNZbGqvq/'},
+        { img: 'https://scontent.fsgn2-9.fna.fbcdn.net/v/t39.30808-6/486237223_1076574884514208_7079693373400848904_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGhSaYUQrq-LPG-rX6c2OS8R0Jo6dtmzTNHQmjp22bNMxsB_DvEKRVM_xNzQAn7hMxL7OO2i5TB8Rtd7jkeGTDR&_nc_ohc=qz-JASz8KUYQ7kNvwGspH0K&_nc_oc=Adk_rO_9mza3HwYRaSpx7RC4WRNp6ye5OMqsokG9AT1uTj6AUCHW1o6H8a4sEO9WXtYF_iISFbeYsfZhgv8ymxXN&_nc_zt=23&_nc_ht=scontent.fsgn2-9.fna&_nc_gid=mVKP9bXoDUKiIb_43Z1Rlw&oh=00_AfQMEQpoDP9I0bHLgaXGVxiDcxBCwfZvzNCAR5lJROBGiA&oe=68708290', title: '❣️HOẠT ĐỘNG TÌNH NGUYỆN GÌ CHƯA NGƯỜI ĐẸP?', desc: 'Chúng mình đã tận tay trao gạo và đồ dùng thiết yếu cho các hộ gia đình có hoàn cảnh khó khăn tại khu vực phường Hải Cảng. Không những trao đi chúng tớ được nhận lại rất nhiều hơn thế. Chúng mình được nhận không biết bao nhiêu lời cảm ơn...' , link :'https://www.facebook.com/share/p/1LcjmdTJeX/'}
+    ],
+    activeSlide: 0,
+    transitioning: false,
+    next() {
+      if (this.transitioning) return;
+      this.transitioning = true;
+      this.activeSlide = (this.activeSlide + 1) % this.slides.length;
+      setTimeout(() => this.transitioning = false, 500);
+    },
+    prev() {
+      if (this.transitioning) return;
+      this.transitioning = true;
+      this.activeSlide = (this.activeSlide - 1 + this.slides.length) % this.slides.length;
+      setTimeout(() => this.transitioning = false, 500);
+    }
+}" x-init="$watch('activeSlide', () => transitioning = true)">
+  <h3 class="text-4xl font-extrabold text-center mb-16 text-red-600">Hoạt động của LCC ở Station 1✨</h3>
+  <div class="flex items-center space-x-6">
+    <div class="w-1/4 opacity-40 scale-90 transition-transform duration-500">
+      <img :src="slides[(activeSlide - 1 + slides.length) % slides.length].img" alt="" class="rounded-xl shadow-lg rounded-xl mx-auto shadow-lg max-h-80 w-auto object-contain">
+    </div>
+
+<a :href="slides[activeSlide].link" target="_blank"
+   class="flex-1 bg-white p-8 rounded-3xl shadow-2xl flex flex-col items-center transition-opacity duration-500 ease-in-out"
+   :class="{ 'opacity-0': transitioning, 'opacity-100': !transitioning }">
+  <img :src="slides[activeSlide].img" alt="" 
+       class="w-full md:w-[400px] rounded-xl shadow-lg mb-6 object-contain max-h-80">
+  <div class="text-center">
+    <h4 class="text-3xl font-bold text-red-600 mb-4" x-text="slides[activeSlide].title"></h4>
+    <p class="text-lg" x-text="slides[activeSlide].desc"></p>
+  </div>
+</a>
+
+
+    <div class="w-1/4 opacity-40 scale-90 transition-transform duration-500">
+      <img :src="slides[(activeSlide + 1) % slides.length].img" alt="" class="rounded-xl shadow-lg rounded-xl mx-auto shadow-lg max-h-80 w-auto object-contain">
+    </div>
+  </div>
+
+  <div class="flex justify-center mt-8 space-x-4">
+    <button @click="prev" class="bg-red-500 text-white rounded-full p-3 shadow hover:bg-red-600 transition">
+      &#8592;
+    </button>
+    <button @click="next" class="bg-red-500 text-white rounded-full p-3 shadow hover:bg-red-600 transition">
+      &#8594;
+    </button>
+  </div>
+</section>
+
+<script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
+<section id = "events" class="bg border-t border-red-300 py-10">
+  <div class="max-w-7xl mx-auto px-6 text-center space-y-6">
+    <h3 class="text-2xl md:text-3xl font-extrabold text-red-600">SỰ KIỆN BÁN HÀNG GÂY QUỸ</h3>
+    <img src="https://i.pinimg.com/736x/9c/c7/08/9cc70842ed4b88708a8bc6fff8b85c39.jpg" alt="Móc khóa kỷ niệm" class="mx-auto rounded-xl shadow-lg w-48 h-48 object-cover">
+    <p class="text-gray-700 max-w-2xl mx-auto">Ghé shop để nhận được những chiếc móc khóa kỉ niệm xinh xinh 25 năm kỷ niệm ngày thành lập trường nhaa</p>
+    <a href="/Form" class="bg-gradient-to-r from-red-500 to-pink-500 text-white font-semibold px-8 py-3 rounded-full hover:scale-105 hover:shadow-xl transition duration-300 inline-block text-center">
+        SỰ KIỆN BÁN MÓC KHÓA CỦA CLB
+    </a>
+  </div>
+</section>
+
+
+<footer class="bg-gradient-to-r from-red-700 via-red-600 to-red-700 text-white py-12 fade-in border-t border-red-400">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0">
+    <p class="font-semibold text-center md:text-left">&copy; 2025 LE'S CHARITY CLUB. All Rights Reserved.</p>
+    <div class="flex space-x-6">
+      <a href="https://www.facebook.com/profile.php?id=100064851190770" class="flex items-center space-x-2 hover:text-red-300 transition transform hover:scale-110">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M22.675 0h-21.35C.6 0 0 .6 0 1.325v21.351C0 23.4.6 24 1.325 24h11.495v-9.294H9.691v-3.622h3.129V8.413c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.464.099 2.797.143v3.24h-1.918c-1.504 0-1.796.716-1.796 1.766v2.317h3.587l-.467 3.622h-3.12V24h6.116C23.4 24 24 23.4 24 22.675V1.325C24 .6 23.4 0 22.675 0z"/>
+        </svg>
+        <span>Facebook</span>
+    </a>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>
